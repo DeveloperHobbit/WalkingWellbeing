@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\hobbs\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hobbs\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\src\\main\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                },
+                {
+                    "source": "C:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "2,2",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hobbs\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "5,2,7",
                         "startColumns": "0,0,0",
@@ -37,23 +54,6 @@
                         "endLines": "6,9,13",
                         "endColumns": "8,8,8",
                         "endOffsets": "318,456,683"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\hobbs\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\src\\main\\res\\values\\ids.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "46",
-                        "endOffsets": "97"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "45",
-                        "endOffsets": "96"
                     }
                 }
             ]

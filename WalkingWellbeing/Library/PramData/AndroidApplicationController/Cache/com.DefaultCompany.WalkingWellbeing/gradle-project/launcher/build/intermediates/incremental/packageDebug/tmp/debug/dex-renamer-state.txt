@@ -1,10 +1,10 @@
-#Thu Mar 10 11:56:08 GMT 2022
+#Wed Mar 23 12:23:38 GMT 2022
 path.2=classes_0.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=C\:\\Users\\hobbs\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_0.dex
-base.1=C\:\\Users\\hobbs\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
-base.0=C\:\\Users\\hobbs\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.2=C\:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_0.dex
+base.1=C\:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.WalkingWellbeing\\gradle-project\\launcher\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex

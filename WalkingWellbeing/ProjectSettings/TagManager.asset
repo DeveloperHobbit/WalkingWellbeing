@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - MeditationMarker1
+  - MeditationMarker2
+  - MeditationMarker3
+  - MeditationMarker4
   layers:
   - Default
   - TransparentFX

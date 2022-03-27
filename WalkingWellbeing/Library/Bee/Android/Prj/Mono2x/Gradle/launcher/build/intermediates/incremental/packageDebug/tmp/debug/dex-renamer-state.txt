@@ -1,10 +1,10 @@
-#Thu Mar 10 11:55:21 GMT 2022
+#Sun Mar 27 16:27:59 BST 2022
 path.2=classes_0.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=C\:\\Users\\hobbs\\WalkingWellbeing\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_0.dex
-base.1=C\:\\Users\\hobbs\\WalkingWellbeing\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
-base.0=C\:\\Users\\hobbs\\WalkingWellbeing\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.2=C\:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_0.dex
+base.1=C\:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Walking-Wellbeing-Git\\WalkingWellbeing\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
