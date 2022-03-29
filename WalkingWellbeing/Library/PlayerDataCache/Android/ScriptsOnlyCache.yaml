@@ -2,7 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - FlickerLight
-    - MediationMarkersLogic
+    - MeditationMarkersLogic
+    - UILogic
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -43,8 +44,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.RawImage
   serializedClasses:
     Unity.InputSystem:
@@ -83,7 +86,12 @@ ScriptsOnlyBuild:
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
   sceneClasses:
     Assets/Scenes/AlpineWoodlandDemo.unity:
     - Class: 1
@@ -123,55 +131,61 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 442}
+      Script: {instanceID: 468}
     - Class: 114
-      Script: {instanceID: 450}
+      Script: {instanceID: 476}
     - Class: 114
-      Script: {instanceID: 456}
+      Script: {instanceID: 482}
     - Class: 114
-      Script: {instanceID: 1950}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 1968}
+      Script: {instanceID: 1976}
     - Class: 114
-      Script: {instanceID: 2334}
+      Script: {instanceID: 1994}
     - Class: 114
-      Script: {instanceID: 2506}
+      Script: {instanceID: 2360}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 2730}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 2752}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 2820}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 2958}
+      Script: {instanceID: 2928}
     - Class: 114
-      Script: {instanceID: 3122}
+      Script: {instanceID: 2984}
     - Class: 114
-      Script: {instanceID: 3286}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3312}
     - Class: 114
-      Script: {instanceID: 3820}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 4308}
+      Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 4498}
+      Script: {instanceID: 3846}
     - Class: 114
-      Script: {instanceID: 4766}
+      Script: {instanceID: 4334}
     - Class: 114
-      Script: {instanceID: 4850}
+      Script: {instanceID: 4524}
     - Class: 114
-      Script: {instanceID: 4872}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 5044}
+      Script: {instanceID: 4876}
     - Class: 114
-      Script: {instanceID: 5206}
+      Script: {instanceID: 4898}
     - Class: 114
-      Script: {instanceID: 131548}
+      Script: {instanceID: 5070}
+    - Class: 114
+      Script: {instanceID: 5104}
+    - Class: 114
+      Script: {instanceID: 5234}
+    - Class: 114
+      Script: {instanceID: 32008}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -191,6 +205,8 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 215
       Script: {instanceID: 0}
@@ -907,10 +923,10 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 041bc03ed1e062d27d6b97b508041b2c
+      Hash: 7be413d0e9500f10870328dbddf3013a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MediationMarkersLogic
+    className: MeditationMarkersLogic
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -971,6 +987,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 36414aa96ac1abd0b4fb822d402ea4dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UILogic
   - hash:
       serializedVersion: 2
       Hash: 426e5bd616852254b77531cd1a8e29b6
@@ -1055,12 +1077,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.UI
     className: XRUIInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UI
   platform: 13
   scenePathNames:
   - Assets/Scenes/AlpineWoodlandDemo.unity

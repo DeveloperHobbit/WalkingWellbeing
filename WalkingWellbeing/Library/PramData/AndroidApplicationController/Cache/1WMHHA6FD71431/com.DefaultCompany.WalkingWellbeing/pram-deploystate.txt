@@ -1,7 +1,7 @@
-assets/bin/Data/boot.config:336-637839819103900694
-assets/bin/Data/data.unity3d:28620941-637839918884887977
-assets/bin/Data/Managed/Assembly-CSharp.dll:7680-637839893135469954
-assets/bin/Data/Managed/Assembly-CSharp.pdb:15520-637839893135509952
+assets/bin/Data/boot.config:337-637840619811936696
+assets/bin/Data/data.unity3d:28615475-637840941819455952
+assets/bin/Data/Managed/Assembly-CSharp.dll:9728-637840941819290939
+assets/bin/Data/Managed/Assembly-CSharp.pdb:15900-637840941819350951
 assets/bin/Data/Managed/Mono.Security.dll:241152-637836350103975118
 assets/bin/Data/Managed/mscorlib.dll:4622848-637836350103985052
 assets/bin/Data/Managed/netstandard.dll:90624-637836350103965185
@@ -171,9 +171,9 @@ assets/bin/Data/Managed/UnityEngine.XRModule.dll:59392-637836350102897352
 assets/bin/Data/Managed/UnityEngine.XRModule.pdb:16416-637836350103483417
 assets/bin/Data/RuntimeInitializeOnLoads.json:1589-637836350103950287
 assets/bin/Data/ScriptingAssemblies.json:2699-637836350103945319
-assets/bin/Data/sharedassets0.resource:1936288-637839918884807980
+assets/bin/Data/sharedassets0.resource:27602016-637840941819450954
 assets/bin/Data/unity default resources:4234352-637836350103508260
-assets/bin/Data/unity_app_guid:36-637839918885417978
+assets/bin/Data/unity_app_guid:36-637840941819925944
 assets/bin/Data/UnitySubsystems/OculusXRPlugin/UnitySubsystemsManifest.json:365-637836350103930421
 jniLibs/armeabi-v7a/libmain.so:31708-637836350103483417
 jniLibs/armeabi-v7a/libmono-native.so:1222596-637836350102912255
