@@ -9,9 +9,8 @@ android.permission.INTERNET was added because:
 		Unity.InputSystem-FeaturesChecked.txt
 	Development player
 android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
-	UnityEngine.Input::get_touches was present in:
-		Unity.XR.Interaction.Toolkit-FeaturesChecked.txt
 	UnityEngine.Input::GetTouch was present in:
+		Unity.XR.Interaction.Toolkit-FeaturesChecked.txt
 		UnityEngine.UI-FeaturesChecked.txt
 	UnityEngine.Input::get_touchCount was present in:
 		Unity.XR.Interaction.Toolkit-FeaturesChecked.txt

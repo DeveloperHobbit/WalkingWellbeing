@@ -330,6 +330,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Timeline.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.VisualStudio.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.VSCode.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Unity.XR.CoreUtils.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Unity.XR.CoreUtils.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.XR.Interaction.Toolkit.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.XR.Interaction.Toolkit.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.XR.Management.Editor.ref.dll"
@@ -343,8 +345,10 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 "Assets/LowpolyStyle/Alpine Woodland/4_Scripts/FlickerLight.cs"
+"Assets/Scripts/GameUILogic.cs"
+"Assets/Scripts/HelpUILogic.cs"
 "Assets/Scripts/MeditationMarkersLogic.cs"
-"Assets/Scripts/UILogic.cs"
+"Assets/Scripts/MenuUILogic.cs"
 -langversion:9.0
 
 /deterministic

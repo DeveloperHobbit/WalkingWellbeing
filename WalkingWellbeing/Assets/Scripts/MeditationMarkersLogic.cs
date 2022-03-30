@@ -13,22 +13,17 @@ public class MeditationMarkersLogic : MonoBehaviour
 
     public int MeditationMarkerCounter = 1;
 
-    public AudioSource IntroVoice;
-    public AudioSource MeditationMarker1Voice;
-    public AudioSource MeditationMarker2Voice;
-    public AudioSource MeditationMarker3Voice;
-    public AudioSource MeditationMarker4Voice;
-    public AudioSource OutroVoice;
-
+    public AudioSource[] audioSources = new AudioSource[6];
+ 
     public GameObject LocomotionSystem;
 
-    private UILogic UILogicScript;
+    private GameUILogic UILogicScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        UILogicScript = GetComponent<UILogic>();
-        IntroVoice.Play();
+        UILogicScript = GetComponent<GameUILogic>();
+        audioSources[0].Play();
         MeditationMarker2.SetActive(false);
         MeditationMarker3.SetActive(false);
         MeditationMarker4.SetActive(false);
@@ -47,7 +42,7 @@ public class MeditationMarkersLogic : MonoBehaviour
             case 1:
                 if (hit.gameObject.CompareTag("MeditationMarker1"))
                 {
-                    MeditationMarker1Voice.Play();
+                    audioSources[1].Play();
                     MeditationMarker1.SetActive(false);
                     LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
                     StartCoroutine(WaitAndActivateNextMarker(131));
@@ -56,7 +51,7 @@ public class MeditationMarkersLogic : MonoBehaviour
             case 2:
                 if (hit.gameObject.CompareTag("MeditationMarker2"))
                 {
-                    MeditationMarker2Voice.Play();
+                    audioSources[2].Play();
                     MeditationMarker2.SetActive(false);
                     LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
                     StartCoroutine(WaitAndActivateNextMarker(128));
@@ -65,7 +60,7 @@ public class MeditationMarkersLogic : MonoBehaviour
             case 3:
                 if (hit.gameObject.CompareTag("MeditationMarker3"))
                 {
-                    MeditationMarker3Voice.Play();
+                    audioSources[3].Play();
                     MeditationMarker3.SetActive(false);
                     LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
                     StartCoroutine(WaitAndActivateNextMarker(127));
@@ -74,7 +69,7 @@ public class MeditationMarkersLogic : MonoBehaviour
             case 4:
                 if (hit.gameObject.CompareTag("MeditationMarker4"))
                 {
-                    MeditationMarker4Voice.Play();
+                    audioSources[4].Play();
                     MeditationMarker4.SetActive(false);
                     LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
                     StartCoroutine(WaitAndActivateNextMarker(210));
@@ -87,7 +82,7 @@ public class MeditationMarkersLogic : MonoBehaviour
 
     IEnumerator WaitAndActivateNextMarker(float TimeInSeconds)
     {
-        yield return new WaitForSecondsRealtime(TimeInSeconds);
+        yield return new WaitForSeconds(TimeInSeconds);
 
         switch (MeditationMarkerCounter)
         {
@@ -122,8 +117,8 @@ public class MeditationMarkersLogic : MonoBehaviour
 
     IEnumerator PlayOutroAndEndGame()
     {
-        OutroVoice.Play();
-        yield return new WaitForSecondsRealtime(26);
+        audioSources[5].Play();
+        yield return new WaitForSeconds(26);
         Application.Quit();
     }
 }

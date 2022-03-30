@@ -10,6 +10,7 @@
 -a="C:\Walking-Wellbeing-Git\WalkingWellbeing\Library\PlayerScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll"
 -a="C:\Walking-Wellbeing-Git\WalkingWellbeing\Library\PlayerScriptAssemblies\Unity.XR.Management.dll"
 -a="C:\Walking-Wellbeing-Git\WalkingWellbeing\Library\PlayerScriptAssemblies\Unity.XR.Oculus.dll"
+-a="C:\Walking-Wellbeing-Git\WalkingWellbeing\Library\PlayerScriptAssemblies\Unity.XR.CoreUtils.dll"
 -a="C:\Walking-Wellbeing-Git\WalkingWellbeing\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll"
 -s="C:\Program Files\Unity\Hub\Editor\2021.2.13f1\Editor\Data\Managed\UnityEngine"
 -s="C:\Walking-Wellbeing-Git\WalkingWellbeing\Library\PlayerScriptAssemblies"
