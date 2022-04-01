@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.XR;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameUILogic : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class GameUILogic : MonoBehaviour
     public GameObject sessionBackground;
 
     private InputDevice rightHandController;
+
+    public GameObject leftHandControllerObject;
+    public GameObject rightHandControllerObject;
+
     private bool paused = false;
     private bool lastRightPrimaryButtonValue = false;
 
@@ -29,12 +34,15 @@ public class GameUILogic : MonoBehaviour
     void Start()
     {
         MeditationMarkersLogicScript = GetComponent<MeditationMarkersLogic>();
-      
+        paused = false;
+        Time.timeScale = 1;
         pauseBackground.SetActive(false);
         menuButton.SetActive(false);
         List<InputDevice> devices = new List<InputDevice>();
         InputDevices.GetDevices(devices);
         rightHandController = devices[2];
+        leftHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = false;
+        rightHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = false;
     }
 
     // Update is called once per frame
@@ -77,7 +85,10 @@ public class GameUILogic : MonoBehaviour
             distanceBackground.SetActive(false);
             Time.timeScale = 0;
 
-            foreach(AudioSource audioSource in MeditationMarkersLogicScript.audioSources)
+            leftHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = true;
+            rightHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = true;
+
+            foreach (AudioSource audioSource in MeditationMarkersLogicScript.audioSources)
             {
                 if (audioSource.isPlaying)
                 {
@@ -95,7 +106,10 @@ public class GameUILogic : MonoBehaviour
             distanceBackground.SetActive(true);
             Time.timeScale = 1;
 
-            if(audioSourcePlaying != null) {
+            leftHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = false;
+            rightHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = false;
+
+            if (audioSourcePlaying != null) {
                 audioSourcePlaying.UnPause();
                 audioSourcePlaying = null;
             }

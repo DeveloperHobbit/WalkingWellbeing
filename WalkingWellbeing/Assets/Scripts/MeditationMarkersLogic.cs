@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
 
 public class MeditationMarkersLogic : MonoBehaviour
 {
@@ -119,6 +120,6 @@ public class MeditationMarkersLogic : MonoBehaviour
     {
         audioSources[5].Play();
         yield return new WaitForSeconds(26);
-        Application.Quit();
+        SceneManager.LoadScene("MenuScene");
     }
 }
