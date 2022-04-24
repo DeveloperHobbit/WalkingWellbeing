@@ -15211,7 +15211,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1514561160}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameUILogic, Assembly-CSharp
         m_MethodName: LoadMenuScene
         m_Mode: 1
@@ -63855,13 +63855,13 @@ LightingSettings:
   m_Name: Settings.lighting
   serializedVersion: 4
   m_GIWorkflowMode: 1
-  m_EnableBakedLightmaps: 0
-  m_EnableRealtimeLightmaps: 1
+  m_EnableBakedLightmaps: 1
+  m_EnableRealtimeLightmaps: 0
   m_RealtimeEnvironmentLighting: 1
   m_BounceScale: 1
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
-  m_UsingShadowmask: 0
+  m_UsingShadowmask: 1
   m_BakeBackend: 0
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
@@ -63872,7 +63872,7 @@ LightingSettings:
   m_CompAOExponent: 1
   m_CompAOExponentDirect: 0
   m_ExtractAO: 0
-  m_MixedBakeMode: 1
+  m_MixedBakeMode: 2
   m_LightmapsBakeMode: 1
   m_FilterMode: 1
   m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
@@ -68087,7 +68087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508653594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.806, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68107,11 +68107,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 1508653599}
-  m_MoveSpeed: 4
+  m_MoveSpeed: 3
   m_EnableStrafe: 1
   m_UseGravity: 1
   m_GravityApplicationMode: 1
-  m_ForwardSource: {fileID: 0}
+  m_ForwardSource: {fileID: 1786738069}
   m_LeftHandMoveAction:
     m_UseReference: 1
     m_Action:
@@ -68562,6 +68562,8 @@ GameObject:
   - component: {fileID: 1514561158}
   - component: {fileID: 1514561160}
   - component: {fileID: 1514561161}
+  - component: {fileID: 1514561162}
+  - component: {fileID: 1514561163}
   m_Layer: 0
   m_Name: XR Rig - Player
   m_TagString: Untagged
@@ -68577,7 +68579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514561152}
   m_LocalRotation: {x: -0.00045393858, y: 0.7451442, z: 0.00050719467, w: 0.6669031}
-  m_LocalPosition: {x: -31.11, y: 48.158, z: 86.87}
+  m_LocalPosition: {x: -31.11, y: 47.84, z: 86.87}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -68655,10 +68657,10 @@ MonoBehaviour:
   - {fileID: 1646900201}
   distanceText: {fileID: 1014433563}
   sessionText: {fileID: 1996130813}
-  pauseBackground: {fileID: 1942876919}
+  pauseText: {fileID: 1942876919}
   menuButton: {fileID: 485786934}
-  distanceBackground: {fileID: 432401313}
-  sessionBackground: {fileID: 128117866}
+  distanceTextObject: {fileID: 432401313}
+  sessionTextObject: {fileID: 128117866}
   leftHandControllerObject: {fileID: 259045934}
   rightHandControllerObject: {fileID: 54337926}
 --- !u!114 &1514561161
@@ -68673,10 +68675,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcf33eb7ecb6e74399087a0d33fc249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MeditationMarker1: {fileID: 932281063}
-  MeditationMarker2: {fileID: 1700644378}
-  MeditationMarker3: {fileID: 1479691954}
-  MeditationMarker4: {fileID: 1646900201}
+  MeditationMarkers:
+  - {fileID: 932281063}
+  - {fileID: 1700644378}
+  - {fileID: 1479691954}
+  - {fileID: 1646900201}
   MeditationMarkerCounter: 1
   audioSources:
   - {fileID: 587450724}
@@ -68686,6 +68689,33 @@ MonoBehaviour:
   - {fileID: 1447106238}
   - {fileID: 306945411}
   LocomotionSystem: {fileID: 1508653594}
+--- !u!114 &1514561162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514561152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LocomotionProvider: {fileID: 1508653597}
+  m_MinHeight: 2
+  m_MaxHeight: 2.5
+--- !u!114 &1514561163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514561152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9437430dd3e4424d9f754fa2b47eb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1515351159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 726e4aac5dc0fe346804c9adcfa5467c, type: 3}
@@ -75701,7 +75731,7 @@ MeshCollider:
   m_GameObject: {fileID: 1787947206}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30

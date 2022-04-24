@@ -140,53 +140,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 468}
     - Class: 114
-      Script: {instanceID: 476}
+      Script: {instanceID: 478}
     - Class: 114
       Script: {instanceID: 482}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1650}
     - Class: 114
-      Script: {instanceID: 1976}
+      Script: {instanceID: 2006}
     - Class: 114
-      Script: {instanceID: 1994}
+      Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 2534}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2862}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2848}
+      Script: {instanceID: 2954}
     - Class: 114
-      Script: {instanceID: 2930}
+      Script: {instanceID: 3040}
     - Class: 114
-      Script: {instanceID: 2986}
+      Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 3150}
+      Script: {instanceID: 3274}
     - Class: 114
-      Script: {instanceID: 3314}
+      Script: {instanceID: 3454}
     - Class: 114
-      Script: {instanceID: 3528}
+      Script: {instanceID: 3676}
     - Class: 114
-      Script: {instanceID: 3848}
+      Script: {instanceID: 4034}
     - Class: 114
-      Script: {instanceID: 4336}
+      Script: {instanceID: 4548}
     - Class: 114
-      Script: {instanceID: 4526}
+      Script: {instanceID: 4754}
     - Class: 114
-      Script: {instanceID: 4794}
+      Script: {instanceID: 5034}
     - Class: 114
-      Script: {instanceID: 4900}
+      Script: {instanceID: 5148}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 5330}
     - Class: 114
-      Script: {instanceID: 5106}
+      Script: {instanceID: 5364}
     - Class: 114
-      Script: {instanceID: 5378}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 6014}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -239,43 +239,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 476}
+      Script: {instanceID: 468}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1650}
     - Class: 114
-      Script: {instanceID: 1976}
+      Script: {instanceID: 2006}
     - Class: 114
-      Script: {instanceID: 1994}
+      Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 2534}
+      Script: {instanceID: 2508}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 2862}
     - Class: 114
-      Script: {instanceID: 2930}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2986}
+      Script: {instanceID: 3040}
     - Class: 114
-      Script: {instanceID: 3314}
+      Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 3528}
+      Script: {instanceID: 3454}
     - Class: 114
-      Script: {instanceID: 3848}
+      Script: {instanceID: 3676}
     - Class: 114
-      Script: {instanceID: 4336}
+      Script: {instanceID: 4034}
     - Class: 114
-      Script: {instanceID: 4526}
+      Script: {instanceID: 4548}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 4754}
     - Class: 114
-      Script: {instanceID: 5378}
+      Script: {instanceID: 5330}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 112766}
+      Script: {instanceID: 6014}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -316,51 +316,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 476}
+      Script: {instanceID: 468}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1650}
     - Class: 114
-      Script: {instanceID: 1976}
+      Script: {instanceID: 2006}
     - Class: 114
-      Script: {instanceID: 1994}
+      Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 2248}
+      Script: {instanceID: 2302}
     - Class: 114
-      Script: {instanceID: 2362}
+      Script: {instanceID: 2438}
     - Class: 114
-      Script: {instanceID: 2534}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2862}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2930}
+      Script: {instanceID: 3040}
     - Class: 114
-      Script: {instanceID: 2986}
+      Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 3314}
+      Script: {instanceID: 3454}
     - Class: 114
-      Script: {instanceID: 3528}
+      Script: {instanceID: 3676}
     - Class: 114
-      Script: {instanceID: 3848}
+      Script: {instanceID: 4034}
     - Class: 114
-      Script: {instanceID: 4336}
+      Script: {instanceID: 4546}
     - Class: 114
-      Script: {instanceID: 4526}
+      Script: {instanceID: 4548}
     - Class: 114
-      Script: {instanceID: 4878}
+      Script: {instanceID: 4754}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 5126}
     - Class: 114
-      Script: {instanceID: 5236}
+      Script: {instanceID: 5330}
     - Class: 114
-      Script: {instanceID: 5378}
+      Script: {instanceID: 5500}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 40474}
+      Script: {instanceID: 6014}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -382,10 +382,10 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: dda32ffa9d59b8eb1822fc59bdec67fa
+      Hash: 7a3d922f2b08a004ad6764d7bb4be292
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit
-    className: ActionBasedSnapTurnProvider
+    className: ActionBasedController
   - hash:
       serializedVersion: 2
       Hash: 219b6caaad9662ed6a7d81ee3a9cd53d
@@ -394,16 +394,16 @@ ScriptsOnlyBuild:
     className: ActionBasedContinuousTurnProvider
   - hash:
       serializedVersion: 2
-      Hash: 7a3d922f2b08a004ad6764d7bb4be292
-    assemblyName: Unity.XR.Interaction.Toolkit.dll
-    namespaceName: UnityEngine.XR.Interaction.Toolkit
-    className: ActionBasedController
-  - hash:
-      serializedVersion: 2
       Hash: a6c29e92dd6fcd5262c7189a67722496
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: ActionBasedContinuousMoveProvider
+  - hash:
+      serializedVersion: 2
+      Hash: dda32ffa9d59b8eb1822fc59bdec67fa
+    assemblyName: Unity.XR.Interaction.Toolkit.dll
+    namespaceName: UnityEngine.XR.Interaction.Toolkit
+    className: ActionBasedSnapTurnProvider
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -574,6 +574,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HelpUILogic
+  - hash:
+      serializedVersion: 2
       Hash: 6f1a7bf478686f9b2a14f524c902853b
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -718,6 +724,12 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.CoreUtils.dll
+    namespaceName: Unity.XR.CoreUtils
+    className: OnDestroyNotifier
+  - hash:
+      serializedVersion: 2
       Hash: 8fbc134fd506d97c845cf2b715231396
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -778,16 +790,16 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: ToggleGroup
-  - hash:
-      serializedVersion: 2
       Hash: 69415240821be7986b27e72bf9609a30
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -994,6 +1006,12 @@ ScriptsOnlyBuild:
     className: InputSettings
   - hash:
       serializedVersion: 2
+      Hash: c24b0c4ed62d8b7eabb5a4c9a20f4e00
+    assemblyName: Unity.XR.Interaction.Toolkit.dll
+    namespaceName: UnityEngine.XR.Interaction.Toolkit
+    className: InteractionLayerSettings
+  - hash:
+      serializedVersion: 2
       Hash: d79be48f820686024dd0d9e080d7733b
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
@@ -1010,6 +1028,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 4efe5f564d36c37295fd0e7407c4ad9a
+    assemblyName: Unity.XR.CoreUtils.dll
+    namespaceName: Unity.XR.CoreUtils
+    className: XROrigin
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1090,7 +1114,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: c04b5082c9bb0b6a159ebf5787e103e4
+      Hash: 70b046663b45ccbfcdef736764380214
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MeditationMarkersLogic
@@ -1156,7 +1180,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 3017a9ee0ea0be7653662ce12f944340
+      Hash: b232365a975aa82111623542eadce8d6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameUILogic
@@ -1186,16 +1210,16 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 739bf1716f5febbd3901b28879eb76a1
-    assemblyName: Unity.InputSystem.dll
-    namespaceName: UnityEngine.InputSystem.Editor
-    className: InputDeviceDebuggerWindow
-  - hash:
-      serializedVersion: 2
       Hash: cef7651ddeb949eae74c2a92489f07e5
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.UI
     className: TrackedDeviceGraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 739bf1716f5febbd3901b28879eb76a1
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputDeviceDebuggerWindow
   - hash:
       serializedVersion: 2
       Hash: c5fd7bfc1806f78178f8b5f91e072387
@@ -1244,30 +1268,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.UI
     className: XRUIInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: c24b0c4ed62d8b7eabb5a4c9a20f4e00
-    assemblyName: Unity.XR.Interaction.Toolkit.dll
-    namespaceName: UnityEngine.XR.Interaction.Toolkit
-    className: InteractionLayerSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.XR.CoreUtils.dll
-    namespaceName: Unity.XR.CoreUtils
-    className: OnDestroyNotifier
-  - hash:
-      serializedVersion: 2
-      Hash: 4efe5f564d36c37295fd0e7407c4ad9a
-    assemblyName: Unity.XR.CoreUtils.dll
-    namespaceName: Unity.XR.CoreUtils
-    className: XROrigin
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HelpUILogic
   platform: 13
   scenePathNames:
   - Assets/Scenes/MenuScene.unity

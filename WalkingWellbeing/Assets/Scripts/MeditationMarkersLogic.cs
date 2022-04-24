@@ -7,10 +7,7 @@ using UnityEngine.SceneManagement;
 public class MeditationMarkersLogic : MonoBehaviour
 {
 
-    public GameObject MeditationMarker1;
-    public GameObject MeditationMarker2;
-    public GameObject MeditationMarker3;
-    public GameObject MeditationMarker4;
+    public GameObject[] MeditationMarkers = new GameObject[4];
 
     public int MeditationMarkerCounter = 1;
 
@@ -25,9 +22,9 @@ public class MeditationMarkersLogic : MonoBehaviour
     {
         UILogicScript = GetComponent<GameUILogic>();
         audioSources[0].Play();
-        MeditationMarker2.SetActive(false);
-        MeditationMarker3.SetActive(false);
-        MeditationMarker4.SetActive(false);
+        MeditationMarkers[1].SetActive(false);
+        MeditationMarkers[2].SetActive(false);
+        MeditationMarkers[3].SetActive(false);
     }
 
     // Update is called once per frame
@@ -44,7 +41,7 @@ public class MeditationMarkersLogic : MonoBehaviour
                 if (hit.gameObject.CompareTag("MeditationMarker1"))
                 {
                     audioSources[1].Play();
-                    MeditationMarker1.SetActive(false);
+                    MeditationMarkers[0].SetActive(false);
                     LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
                     StartCoroutine(WaitAndActivateNextMarker(131));
                 }
@@ -53,7 +50,7 @@ public class MeditationMarkersLogic : MonoBehaviour
                 if (hit.gameObject.CompareTag("MeditationMarker2"))
                 {
                     audioSources[2].Play();
-                    MeditationMarker2.SetActive(false);
+                    MeditationMarkers[1].SetActive(false);
                     LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
                     StartCoroutine(WaitAndActivateNextMarker(128));
                 }
@@ -62,7 +59,7 @@ public class MeditationMarkersLogic : MonoBehaviour
                 if (hit.gameObject.CompareTag("MeditationMarker3"))
                 {
                     audioSources[3].Play();
-                    MeditationMarker3.SetActive(false);
+                    MeditationMarkers[2].SetActive(false);
                     LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
                     StartCoroutine(WaitAndActivateNextMarker(127));
                 }
@@ -71,7 +68,7 @@ public class MeditationMarkersLogic : MonoBehaviour
                 if (hit.gameObject.CompareTag("MeditationMarker4"))
                 {
                     audioSources[4].Play();
-                    MeditationMarker4.SetActive(false);
+                    MeditationMarkers[3].SetActive(false);
                     LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
                     StartCoroutine(WaitAndActivateNextMarker(210));
                 }
@@ -89,20 +86,20 @@ public class MeditationMarkersLogic : MonoBehaviour
         {
             case 1:
                 LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
-                MeditationMarker2.SetActive(true);
+                MeditationMarkers[1].SetActive(true);
                 UILogicScript.UpdateMeditationSessionText();
                 MeditationMarkerCounter++;
                 break;
             case 2:
                 LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
-                MeditationMarker3.SetActive(true);
+                MeditationMarkers[2].SetActive(true);
                 UILogicScript.UpdateMeditationSessionText();
                 MeditationMarkerCounter++;
 
                 break;
             case 3:
                 LocomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
-                MeditationMarker4.SetActive(true);
+                MeditationMarkers[3].SetActive(true);
                 UILogicScript.UpdateMeditationSessionText();
                 MeditationMarkerCounter++;
                 break;

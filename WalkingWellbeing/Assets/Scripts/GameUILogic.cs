@@ -15,10 +15,10 @@ public class GameUILogic : MonoBehaviour
     public TextMeshProUGUI sessionText;
     private MeditationMarkersLogic MeditationMarkersLogicScript;
 
-    public GameObject pauseBackground;
+    public GameObject pauseText;
     public GameObject menuButton;
-    public GameObject distanceBackground;
-    public GameObject sessionBackground;
+    public GameObject distanceTextObject;
+    public GameObject sessionTextObject;
 
     private InputDevice rightHandController;
 
@@ -36,7 +36,7 @@ public class GameUILogic : MonoBehaviour
         MeditationMarkersLogicScript = GetComponent<MeditationMarkersLogic>();
         paused = false;
         Time.timeScale = 1;
-        pauseBackground.SetActive(false);
+        pauseText.SetActive(false);
         menuButton.SetActive(false);
         List<InputDevice> devices = new List<InputDevice>();
         InputDevices.GetDevices(devices);
@@ -79,10 +79,10 @@ public class GameUILogic : MonoBehaviour
         if(paused == false)
         {
             paused = true;
-            pauseBackground.SetActive(true);
+            pauseText.SetActive(true);
             menuButton.SetActive(true);
-            sessionBackground.SetActive(false);
-            distanceBackground.SetActive(false);
+            sessionTextObject.SetActive(false);
+            distanceTextObject.SetActive(false);
             Time.timeScale = 0;
 
             leftHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = true;
@@ -100,10 +100,10 @@ public class GameUILogic : MonoBehaviour
         else
         {
             paused = false;
-            pauseBackground.SetActive(false);
+            pauseText.SetActive(false);
             menuButton.SetActive(false);
-            sessionBackground.SetActive(true);
-            distanceBackground.SetActive(true);
+            sessionTextObject.SetActive(true);
+            distanceTextObject.SetActive(true);
             Time.timeScale = 1;
 
             leftHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = false;
