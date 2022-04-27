@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+
 public class CharacterMovementHelper : MonoBehaviour
 {
     private XRRig xrRig;
@@ -25,9 +26,6 @@ public class CharacterMovementHelper : MonoBehaviour
 
     protected virtual void UpdateCharacterController()
     {
-        if (xrRig == null || characterController == null)
-            return;
-
         var height = Mathf.Clamp(xrRig.CameraInOriginSpaceHeight, driver.minHeight, driver.maxHeight);
 
         Vector3 center = xrRig.CameraInOriginSpacePos;

@@ -4157,7 +4157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361, y: 192.2}
+  m_AnchoredPosition: {x: 365, y: 256}
   m_SizeDelta: {x: 174.57, y: 27.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &128117868
@@ -9041,7 +9041,7 @@ GameObject:
   - component: {fileID: 306945410}
   - component: {fileID: 306945411}
   m_Layer: 0
-  m_Name: outro
+  m_Name: Outro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13188,11 +13188,11 @@ RectTransform:
   m_Children:
   - {fileID: 1014433562}
   m_Father: {fileID: 1422489531}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361, y: 231.1}
+  m_AnchoredPosition: {x: 364.99985, y: 294.99994}
   m_SizeDelta: {x: 174.57, y: 27.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &432401315
@@ -15160,7 +15160,7 @@ RectTransform:
   m_Children:
   - {fileID: 163768417}
   m_Father: {fileID: 1422489531}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15211,7 +15211,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1514561165}
         m_TargetAssemblyTypeName: GameUILogic, Assembly-CSharp
         m_MethodName: LoadMenuScene
         m_Mode: 1
@@ -20531,7 +20531,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_Name
-      value: MediationMarker2
+      value: MeditationMarker2
       objectReference: {fileID: 0}
     - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_TagString
@@ -24440,7 +24440,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_Name
-      value: MediationMarker3
+      value: MeditationMarker3
       objectReference: {fileID: 0}
     - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_TagString
@@ -65858,9 +65858,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 128117867}
-  - {fileID: 432401314}
-  - {fileID: 1942876920}
   - {fileID: 485786935}
+  - {fileID: 1942876920}
+  - {fileID: 432401314}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -0.078, y: 0.862, z: 0.001}
@@ -66676,7 +66676,7 @@ GameObject:
   - component: {fileID: 1453798070}
   - component: {fileID: 1453798069}
   m_Layer: 0
-  m_Name: backgroundMusic
+  m_Name: Background Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68560,10 +68560,10 @@ GameObject:
   - component: {fileID: 1514561156}
   - component: {fileID: 1514561157}
   - component: {fileID: 1514561158}
-  - component: {fileID: 1514561160}
   - component: {fileID: 1514561161}
-  - component: {fileID: 1514561162}
   - component: {fileID: 1514561163}
+  - component: {fileID: 1514561164}
+  - component: {fileID: 1514561165}
   m_Layer: 0
   m_Name: XR Rig - Player
   m_TagString: Untagged
@@ -68603,8 +68603,8 @@ MonoBehaviour:
   m_Camera: {fileID: 0}
   m_OriginBaseGameObject: {fileID: 1514561152}
   m_CameraFloorOffsetObject: {fileID: 815626244}
-  m_RequestedTrackingOriginMode: 2
-  m_CameraYOffset: 60
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 1.5
   m_CameraGameObject: {fileID: 1786738068}
 --- !u!114 &1514561157
 MonoBehaviour:
@@ -68631,38 +68631,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 1.5
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.9, z: 0}
---- !u!114 &1514561160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514561152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 773b641ab5eeb0242a9fa3162f2cdad6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MeditationMarkers:
-  - {fileID: 932281063}
-  - {fileID: 1700644378}
-  - {fileID: 1479691954}
-  - {fileID: 1646900201}
-  distanceText: {fileID: 1014433563}
-  sessionText: {fileID: 1996130813}
-  pauseText: {fileID: 1942876919}
-  menuButton: {fileID: 485786934}
-  distanceTextObject: {fileID: 432401313}
-  sessionTextObject: {fileID: 128117866}
-  leftHandControllerObject: {fileID: 259045934}
-  rightHandControllerObject: {fileID: 54337926}
+  m_Center: {x: 0, y: 0.89, z: 0}
 --- !u!114 &1514561161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68675,12 +68650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcf33eb7ecb6e74399087a0d33fc249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MeditationMarkers:
-  - {fileID: 932281063}
-  - {fileID: 1700644378}
-  - {fileID: 1479691954}
-  - {fileID: 1646900201}
-  MeditationMarkerCounter: 1
+  meditationMarkerCounter: 1
   audioSources:
   - {fileID: 587450724}
   - {fileID: 2099893391}
@@ -68688,8 +68658,19 @@ MonoBehaviour:
   - {fileID: 2003593945}
   - {fileID: 1447106238}
   - {fileID: 306945411}
-  LocomotionSystem: {fileID: 1508653594}
---- !u!114 &1514561162
+--- !u!114 &1514561163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514561152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9437430dd3e4424d9f754fa2b47eb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1514561164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68702,9 +68683,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LocomotionProvider: {fileID: 1508653597}
-  m_MinHeight: 2
-  m_MaxHeight: 2.5
---- !u!114 &1514561163
+  m_MinHeight: 1
+  m_MaxHeight: 2
+--- !u!114 &1514561165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68713,7 +68694,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1514561152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9437430dd3e4424d9f754fa2b47eb5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 773b641ab5eeb0242a9fa3162f2cdad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1515351159 stripped
@@ -75322,11 +75303,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_Name
-      value: MediationMarker4
+      value: MeditationMarker4
       objectReference: {fileID: 0}
     - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_TagString
-      value: MeditationMarker4
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_RootOrder
@@ -76893,7 +76874,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
   m_PrefabInstance: {fileID: 1136077881}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1855747569
+--- !u!64 &1855747570
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

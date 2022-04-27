@@ -9,36 +9,54 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameUILogic : MonoBehaviour
 {
-    public GameObject[] MeditationMarkers = new GameObject[4];
-    private float distance;
-    public TextMeshProUGUI distanceText;
-    public TextMeshProUGUI sessionText;
+    private GameObject[] meditationMarkers = new GameObject[4];
+    private float markerDistance;
+    private TextMeshProUGUI markerDistanceText;
+    private TextMeshProUGUI sessionNumberText;
     private MeditationMarkersLogic MeditationMarkersLogicScript;
 
-    public GameObject pauseText;
-    public GameObject menuButton;
-    public GameObject distanceTextObject;
-    public GameObject sessionTextObject;
+    private GameObject pausedTextBackground;
+    private GameObject menuButton;
+    private GameObject markerDistanceTextBackground;
+    private GameObject sessionNumberTextBackground;
 
     private InputDevice rightHandController;
 
-    public GameObject leftHandControllerObject;
-    public GameObject rightHandControllerObject;
+    private GameObject leftHandControllerObject;
+    private GameObject rightHandControllerObject;
 
     private bool paused = false;
     private bool lastRightPrimaryButtonValue = false;
 
-    AudioSource audioSourcePlaying = null;
+    AudioSource audioSourcePlaying;
+
+    List<InputDevice> devices = new List<InputDevice>();
 
     // Start is called before the first frame update
     void Start()
     {
+        meditationMarkers[0] = GameObject.Find("MeditationMarker1");
+        meditationMarkers[1] = GameObject.Find("MeditationMarker2");
+        meditationMarkers[2] = GameObject.Find("MeditationMarker3");
+        meditationMarkers[3] = GameObject.Find("MeditationMarker4");
+
+        markerDistanceText = GameObject.Find("nextMarkerText").GetComponent<TextMeshProUGUI>();
+        sessionNumberText = GameObject.Find("sessionNumberText").GetComponent<TextMeshProUGUI>();
+       
         MeditationMarkersLogicScript = GetComponent<MeditationMarkersLogic>();
+
+        pausedTextBackground = GameObject.Find("pauseBackground");
+        menuButton = GameObject.Find("menuButton");
+        markerDistanceTextBackground = GameObject.Find("nextMarkerBackground");
+        sessionNumberTextBackground = GameObject.Find("sessionNumberBackground");
+
+        leftHandControllerObject = GameObject.Find("LeftHand Controller");
+        rightHandControllerObject = GameObject.Find("RightHand Controller");
+
         paused = false;
         Time.timeScale = 1;
-        pauseText.SetActive(false);
+        pausedTextBackground.SetActive(false);
         menuButton.SetActive(false);
-        List<InputDevice> devices = new List<InputDevice>();
         InputDevices.GetDevices(devices);
         rightHandController = devices[2];
         leftHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = false;
@@ -54,13 +72,13 @@ public class GameUILogic : MonoBehaviour
 
     void UpdateMarkerDistanceText()
     {
-        distance = (MeditationMarkers[MeditationMarkersLogicScript.MeditationMarkerCounter-1].transform.position - transform.position).magnitude;
-        distanceText.text = "Next Marker: " + distance.ToString("F2");
+        markerDistance = (meditationMarkers[MeditationMarkersLogicScript.meditationMarkerCounter-1].transform.position - transform.position).magnitude;
+        markerDistanceText.text = "Next Marker: " + markerDistance.ToString("F2");
     }
 
     public void UpdateMeditationSessionText()
     {
-        sessionText.text = "Sessions Done: " + (MeditationMarkersLogicScript.MeditationMarkerCounter) + "/4";
+        sessionNumberText.text = "Sessions Done: " + (MeditationMarkersLogicScript.meditationMarkerCounter) + "/4";
     }
 
     void CheckForPauseInput()
@@ -79,10 +97,10 @@ public class GameUILogic : MonoBehaviour
         if(paused == false)
         {
             paused = true;
-            pauseText.SetActive(true);
+            pausedTextBackground.SetActive(true);
             menuButton.SetActive(true);
-            sessionTextObject.SetActive(false);
-            distanceTextObject.SetActive(false);
+            sessionNumberTextBackground.SetActive(false);
+            markerDistanceTextBackground.SetActive(false);
             Time.timeScale = 0;
 
             leftHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = true;
@@ -100,10 +118,10 @@ public class GameUILogic : MonoBehaviour
         else
         {
             paused = false;
-            pauseText.SetActive(false);
+            pausedTextBackground.SetActive(false);
             menuButton.SetActive(false);
-            sessionTextObject.SetActive(true);
-            distanceTextObject.SetActive(true);
+            sessionNumberTextBackground.SetActive(true);
+            markerDistanceTextBackground.SetActive(true);
             Time.timeScale = 1;
 
             leftHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = false;
