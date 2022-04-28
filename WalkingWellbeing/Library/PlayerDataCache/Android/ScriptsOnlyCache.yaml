@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CharacterMovementHelper
     - FlickerLight
     - GameUILogic
     - HelpUILogic
@@ -27,6 +28,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.ActionBasedContinuousMoveProvider
     - UnityEngine.XR.Interaction.Toolkit.ActionBasedController
     - UnityEngine.XR.Interaction.Toolkit.ActionBasedSnapTurnProvider
+    - UnityEngine.XR.Interaction.Toolkit.CharacterControllerDriver
     - UnityEngine.XR.Interaction.Toolkit.Inputs.InputActionManager
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerSettings
     - UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
@@ -164,6 +166,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3096}
     - Class: 114
+      Script: {instanceID: 3208}
+    - Class: 114
       Script: {instanceID: 3274}
     - Class: 114
       Script: {instanceID: 3454}
@@ -186,7 +190,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 6014}
+      Script: {instanceID: 5920}
+    - Class: 114
+      Script: {instanceID: 6016}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -275,7 +281,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 6014}
+      Script: {instanceID: 6016}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -360,7 +366,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 6014}
+      Script: {instanceID: 6016}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1114,7 +1120,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 70b046663b45ccbfcdef736764380214
+      Hash: 6bb6af0d4dc77ac268b7f7e409b43624
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MeditationMarkersLogic
@@ -1180,7 +1186,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: b232365a975aa82111623542eadce8d6
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameUILogic
@@ -1238,6 +1244,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: PlayerInputManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterMovementHelper
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f

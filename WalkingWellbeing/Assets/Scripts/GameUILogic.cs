@@ -13,7 +13,7 @@ public class GameUILogic : MonoBehaviour
     private float markerDistance;
     private TextMeshProUGUI markerDistanceText;
     private TextMeshProUGUI sessionNumberText;
-    private MeditationMarkersLogic MeditationMarkersLogicScript;
+    private MeditationMarkersLogic meditationMarkersLogicScript;
 
     private GameObject pausedTextBackground;
     private GameObject menuButton;
@@ -43,7 +43,7 @@ public class GameUILogic : MonoBehaviour
         markerDistanceText = GameObject.Find("nextMarkerText").GetComponent<TextMeshProUGUI>();
         sessionNumberText = GameObject.Find("sessionNumberText").GetComponent<TextMeshProUGUI>();
        
-        MeditationMarkersLogicScript = GetComponent<MeditationMarkersLogic>();
+        meditationMarkersLogicScript = GetComponent<MeditationMarkersLogic>();
 
         pausedTextBackground = GameObject.Find("pauseBackground");
         menuButton = GameObject.Find("menuButton");
@@ -72,13 +72,13 @@ public class GameUILogic : MonoBehaviour
 
     void UpdateMarkerDistanceText()
     {
-        markerDistance = (meditationMarkers[MeditationMarkersLogicScript.meditationMarkerCounter-1].transform.position - transform.position).magnitude;
+        markerDistance = (meditationMarkers[meditationMarkersLogicScript.meditationMarkerCounter-1].transform.position - transform.position).magnitude;
         markerDistanceText.text = "Next Marker: " + markerDistance.ToString("F2");
     }
 
     public void UpdateMeditationSessionText()
     {
-        sessionNumberText.text = "Sessions Done: " + (MeditationMarkersLogicScript.meditationMarkerCounter) + "/4";
+        sessionNumberText.text = "Sessions Done: " + (meditationMarkersLogicScript.meditationMarkerCounter) + "/4";
     }
 
     void CheckForPauseInput()
@@ -106,7 +106,7 @@ public class GameUILogic : MonoBehaviour
             leftHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = true;
             rightHandControllerObject.GetComponent<XRInteractorLineVisual>().enabled = true;
 
-            foreach (AudioSource audioSource in MeditationMarkersLogicScript.audioSources)
+            foreach (AudioSource audioSource in meditationMarkersLogicScript.audioSources)
             {
                 if (audioSource.isPlaying)
                 {

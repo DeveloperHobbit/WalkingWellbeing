@@ -10,7 +10,7 @@ public class MeditationMarkersLogic : MonoBehaviour
     public int meditationMarkerCounter = 1;
     public AudioSource[] audioSources = new AudioSource[6];
     private GameObject locomotionSystem;
-    private GameUILogic UILogicScript;
+    private GameUILogic uiLogicScript;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class MeditationMarkersLogic : MonoBehaviour
 
         locomotionSystem = GameObject.Find("Locomotion System");
 
-        UILogicScript = GetComponent<GameUILogic>();
+        uiLogicScript = GetComponent<GameUILogic>();
         audioSources[0].Play();
         meditationMarkers[1].SetActive(false);
         meditationMarkers[2].SetActive(false);
@@ -96,25 +96,25 @@ public class MeditationMarkersLogic : MonoBehaviour
             case 1:
                 locomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
                 meditationMarkers[1].SetActive(true);
-                UILogicScript.UpdateMeditationSessionText();
+                uiLogicScript.UpdateMeditationSessionText();
                 meditationMarkerCounter++;
                 break;
             case 2:
                 locomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
                 meditationMarkers[2].SetActive(true);
-                UILogicScript.UpdateMeditationSessionText();
+                uiLogicScript.UpdateMeditationSessionText();
                 meditationMarkerCounter++;
 
                 break;
             case 3:
                 locomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
                 meditationMarkers[3].SetActive(true);
-                UILogicScript.UpdateMeditationSessionText();
+                uiLogicScript.UpdateMeditationSessionText();
                 meditationMarkerCounter++;
                 break;
             case 4:
                 locomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
-                UILogicScript.UpdateMeditationSessionText();
+                uiLogicScript.UpdateMeditationSessionText();
                 StartCoroutine(PlayOutroAndEndGame());
                 break;
             default:
