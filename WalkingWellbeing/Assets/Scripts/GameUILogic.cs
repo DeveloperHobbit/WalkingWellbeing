@@ -9,7 +9,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameUILogic : MonoBehaviour
 {
-    private GameObject[] meditationMarkers = new GameObject[4];
     private float markerDistance;
     private TextMeshProUGUI markerDistanceText;
     private TextMeshProUGUI sessionNumberText;
@@ -35,11 +34,6 @@ public class GameUILogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        meditationMarkers[0] = GameObject.Find("MeditationMarker1");
-        meditationMarkers[1] = GameObject.Find("MeditationMarker2");
-        meditationMarkers[2] = GameObject.Find("MeditationMarker3");
-        meditationMarkers[3] = GameObject.Find("MeditationMarker4");
-
         markerDistanceText = GameObject.Find("nextMarkerText").GetComponent<TextMeshProUGUI>();
         sessionNumberText = GameObject.Find("sessionNumberText").GetComponent<TextMeshProUGUI>();
        
@@ -72,7 +66,7 @@ public class GameUILogic : MonoBehaviour
 
     void UpdateMarkerDistanceText()
     {
-        markerDistance = (meditationMarkers[meditationMarkersLogicScript.meditationMarkerCounter-1].transform.position - transform.position).magnitude;
+        markerDistance = (meditationMarkersLogicScript.meditationMarkers[meditationMarkersLogicScript.meditationMarkerCounter-1].transform.position - transform.position).magnitude;
         markerDistanceText.text = "Next Marker: " + markerDistance.ToString("F2");
     }
 

@@ -223,6 +223,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
     Assets/Scenes/HelpScene.unity:
@@ -1120,7 +1122,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 6bb6af0d4dc77ac268b7f7e409b43624
+      Hash: d0918e8acb5a9f34b6817f197cfb6a92
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MeditationMarkersLogic
@@ -1285,4 +1287,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/HelpScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: C:/Users/hobbs/WalkingWellbeing/new.apk
+  playerPath: C:/Walking-Wellbeing-Git/New.apk

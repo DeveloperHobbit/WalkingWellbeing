@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MeditationMarkersLogic : MonoBehaviour
 {
-    private GameObject[] meditationMarkers = new GameObject[4];
+    public GameObject[] meditationMarkers = new GameObject[4];
     public int meditationMarkerCounter = 1;
     public AudioSource[] audioSources = new AudioSource[6];
     private GameObject locomotionSystem;
