@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: a94367b3e5c5ff44a8f0570a6577d1be, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: d13bc438b0b0b3243b8680f111f1e25f, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: f334fdf698382af43abf12f4f6e152ef, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -20537,6 +20537,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MeditationMarker2
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -20587,6 +20591,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
@@ -24446,6 +24458,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MeditationMarker3
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -24496,6 +24512,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
@@ -52988,6 +53012,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MeditationMarker1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53038,6 +53066,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
@@ -75252,6 +75288,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MeditationMarker4
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013289474552, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -75302,6 +75342,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013228103408, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23000012710421778, guid: ce045960e1845aa47bd760dfc9f8b0f0, type: 3}
