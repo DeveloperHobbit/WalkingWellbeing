@@ -68081,7 +68081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 1508653599}
-  m_MoveSpeed: 3
+  m_MoveSpeed: 2.5
   m_EnableStrafe: 1
   m_UseGravity: 1
   m_GravityApplicationMode: 1
@@ -77904,15 +77904,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: b32c15c9cb370f8439aed5b64269fce9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.097803
+      value: -32.49
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: b32c15c9cb370f8439aed5b64269fce9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5455861
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: b32c15c9cb370f8439aed5b64269fce9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -171.30963
+      value: -171.13
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: b32c15c9cb370f8439aed5b64269fce9, type: 3}
       propertyPath: m_LocalRotation.w
